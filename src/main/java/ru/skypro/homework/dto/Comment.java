@@ -6,10 +6,21 @@ import lombok.Data;
 @Data
 @Schema(description = "Комментарий")
 public class Comment {
-    @Schema(description = "id автора комментария") private Integer author;
-    @Schema(description = "ссылка на аватар автора комментария") private String authorImage;
-    @Schema(description = "имя создателя комментария") private String authorFirstName;
-    @Schema(description = "дата/время создания в мс от эпохи") private Long createdAt;
-    @Schema(description = "id комментария") private Integer pk;
-    @Schema(description = "текст комментария") private String text;
+    @Schema(description = "id автора комментария")
+    private Integer author;
+
+    @Schema(description = "ссылка на аватар автора комментария")
+    private String authorImage;
+
+    @Schema(description = "имя создателя комментария")
+    private String authorFirstName;
+
+    @Schema(description = "дата/время создания в мс от эпохи")
+    private Long createdAt;
+
+    @Schema(description = "id комментария")
+    private Integer pk;
+
+    @Schema(description = "текст комментария")
+    private String text;
 }

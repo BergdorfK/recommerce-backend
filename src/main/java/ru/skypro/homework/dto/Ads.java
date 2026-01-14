@@ -9,6 +9,9 @@ import java.util.List;
 @Data
 @Schema(description = "Коллекция объявлений")
 public class Ads {
-    @Schema(description = "общее количество объявлений") private Integer count;
-    @Schema(description = "список объявлений") private List<Ad> results = new ArrayList<>();
+    @Schema(description = "общее количество объявлений")
+    private Integer count;
+
+    @Schema(description = "список объявлений")
+    private List<Ad> results = new ArrayList<>();
 }
